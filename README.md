@@ -1,12 +1,12 @@
 # Fotographer_web_page
 ## Multy page Vanilla Javascrip proyect
 
-###Tecnologies:
+### Tecnologies:
 Javascript  
 css  
 html  
 
-###Features:
+### Features:
 + Modularized javaScript code  
 + Responsive desing  
 + Proyects gallery with modal  
