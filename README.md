@@ -2,9 +2,9 @@
 ## Multy page Vanilla Javascrip proyect
 
 ### Tecnologies:
-Javascript  
-css  
-html  
++ Javascript  
++ css  
++ html  
 
 ### Features:
 + Modularized javaScript code  
