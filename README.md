@@ -11,7 +11,7 @@
 + Responsive desing  
 + Proyects gallery with hover effect and animated zoom modal  
 + On scroll animations  
-+ autoplay slider of clients testimonials.
++ auto-played slider with clients testimonials.
 + Skill rogress bars  
 + counters of Achievements 
 + Drop-down FAQ list  
