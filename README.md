@@ -9,11 +9,11 @@ html
 ### Features:
 + Modularized javaScript code  
 + Responsive desing  
-+ Proyects gallery with hover effect and zoom modal  
++ Proyects gallery with hover effect and animated zoom modal  
 + On scroll animations  
-+ autoplay testimonials slider
++ autoplay slider of clients testimonials.
 + Skill rogress bars  
-+ Achievements counters  
++ counters of Achievements 
 + Drop-down FAQ list  
 + Animated menu nav  
 + Form validation  
