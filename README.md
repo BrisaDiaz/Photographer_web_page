@@ -16,5 +16,5 @@
 + counters of Achievements 
 + Drop-down FAQ list  
 + Animated menu nav  
-+ Form validation  
++ Contact page with Form validation  
 + smooth scroll to top button
