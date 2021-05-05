@@ -11,6 +11,7 @@ html
 + Responsive desing  
 + Proyects gallery with hover effect and zoom modal  
 + On scroll animations  
++ autoplay testimonials slider
 + Skill rogress bars  
 + Achievements counters  
 + Drop-down FAQ list  
