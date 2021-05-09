@@ -424,7 +424,9 @@ a.btn,
 /* PORTAFOLIO GALLERY */
 .portafolio {
   min-height: 100vh;
-  padding: 1g0px 0;
+  padding: 10px 0;
+  margin: 0 auto;
+  max-width:1280px;
   display: flex;
   flex-flow: column;
   justify-content: center;
