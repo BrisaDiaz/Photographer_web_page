@@ -367,13 +367,14 @@ a.btn,
 .menu a:hover,
 .menu a.active {
   font-size: 1.8rem;
+  line-height: 25px;
   color: #000;
   background-color: var(--root-gold);
 }
 
 /* PRINCIPAL */
 .principal {
-  height: 700px;
+  min-height: 100vh;
   position: relative;
 }
 .principal .foto-overlap {
