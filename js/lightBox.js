@@ -11,6 +11,7 @@ export default function lightBox() {
        let img = e.target.dataset.img || e.target.parentNode.dataset.img ;
   
            $imgZoom.setAttribute("src",img)
+           
          $lightBox.classList.add('show');
           $imgZoom.classList.add('showImage');
 

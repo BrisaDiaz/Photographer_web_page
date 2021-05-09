@@ -64,6 +64,7 @@ h4,
 h5 {
   color: var(--root-back);
   display: block;
+  text-transform: capitalize;
 }
 h1 {
   font-family: "IBM-bold";
@@ -82,7 +83,7 @@ h3 {
   font-weight: 600;
   line-height: 42px;
   text-align: center;
-  margin: 20px;
+  margin: 0;
 }
 h4 {
   font-size: 22px;
@@ -171,11 +172,7 @@ a.btn,
 .scroll-top-btn:hover:before {
   height: 100%;
 }
-section h3 {
-  padding: 20px;
-  background: url(/assets/img/brush.svg) no-repeat center -20%;
-  background-size: 20% 100%;
-}
+
 /* KEYFRAMES */
 @-webkit-keyframes fade-in-left {
   0% {
@@ -376,7 +373,7 @@ section h3 {
 
 /* PRINCIPAL */
 .principal {
-  height: 100vh;
+  height: 700px;
   position: relative;
 }
 .principal .foto-overlap {
@@ -426,7 +423,7 @@ section h3 {
 /* PORTAFOLIO GALLERY */
 .portafolio {
   min-height: 100vh;
-  padding: 20px 0;
+  padding: 1g0px 0;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -565,15 +562,15 @@ section h3 {
 /* TESTIMONIALS */
 .testimonials {
   padding: 20px 0;
-  min-height: 80vh;
   background-color: var(--root-gray);
 }
 .testimonial-slider {
   position: relative;
-  min-height: 80vh;
   width: 70%;
   margin: 20px auto;
+  margin-bottom: 40px;
   display: flex;
+  min-height: 400px;
 }
 .controls {
   position: absolute;
