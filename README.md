@@ -13,7 +13,7 @@
 + Proyects gallery with hover effect and animated zoom modal  
 + On scroll animations  
 + auto-played slider with clients testimonials.
-+ Skill rogress bars  
++ Skill progress bars  
 + counters of Achievements 
 + Drop-down FAQ list  
 + Animated menu nav  
