@@ -798,8 +798,8 @@ footer h5 {
   max-width: 900px;
   margin: 0 auto;
 }
-.contact-info,
-.newsletter {
+.contact-adresses .contact-info,
+.contact-adresses .newsletter {
   display: flex;
   flex-flow: column;
   display: inline-block;

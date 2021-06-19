@@ -116,6 +116,7 @@ main {
   width: 100%;
   font-size: 250%;
 }
+
 .contact-form-wrapper form .wrapper label {
   font-family: "IBM-regular";
   color: rgba(21, 21, 21, 0.7);
@@ -131,6 +132,7 @@ main {
   font-family: "IBM-regular";
   resize: none;
 }
+
 .contact-form-wrapper form .wrapper input:focus,
 .contact-form-wrapper form .wrapper textarea:focus {
   border-width: 2px;
@@ -209,9 +211,16 @@ main {
   .form-map .contact-form-wrapper form .wrapper {
     width: 100%;
   }
-  .contact-form-wrapper form .wrapper input {
+
+  /* .contact-form-wrapper form .wrapper input {
     width: 100%;
     border: 0.5px solid rgba(0, 0, 0, 0.5);
+  } */
+}
+@media screen and (max-width: 12065px) {
+  .contact-form-wrapper form .wrapper input,
+  .contact-form-wrapper form .wrapper textarea {
+    width: 100%;
   }
 }
 @media screen and (max-width: 890px) {
@@ -255,7 +264,7 @@ main {
 }
 @media screen and (max-width: 580px) {
   .form-map .contact-form-wrapper form {
-    width: 300px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
   }
 }
