@@ -7,7 +7,7 @@
   display: block;
   height: 300px;
   width: 100vw;
-  padding: 40px;
+  padding: 20px;
   background: url(../assets/img/breadcrumbs-image-1.jpg) no-repeat center center;
   z-index: 1;
   position: relative;
@@ -27,7 +27,15 @@
   color: #fff;
 }
 .contact-banner span {
-  margin: 0 5px;
+  margin-right: 5px;
+}
+.contact-banner h6 a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  color: var(--root-gold);
 }
 .contact-banner h6 {
   margin: 0 10px;
@@ -37,6 +45,7 @@ a {
   line-height: 120%;
   font-size: 100%;
 }
+
 .contacts {
   min-height: 120px;
   width: 80%;
@@ -121,6 +130,10 @@ main {
   width: 100%;
   font-family: "IBM-regular";
   resize: none;
+}
+.contact-form-wrapper form .wrapper input:focus,
+.contact-form-wrapper form .wrapper textarea:focus {
+  border-width: 2px;
 }
 .contact-form-wrapper form .wrapper input {
   width: 250px;

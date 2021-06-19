@@ -17,8 +17,11 @@
         if (e.target.matches(".contact-form [required]")) {
           let $input = e.target,
             pattern = $input.pattern || $input.dataset.pattern;
+
+
           if (pattern && $input.value !== "") {
             let regex = new RegExp(pattern);
+            
             return !regex.exec($input.value) ? d.getElementById($input.name).nextElementSibling.classList.add("is-active") :
               d.getElementById($input.name).nextElementSibling.classList.remove("is-active");
           }
