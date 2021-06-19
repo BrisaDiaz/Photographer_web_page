@@ -37,6 +37,8 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  box-sizing: inherit;
 }
 body {
   box-sizing: inherit;
@@ -821,7 +823,7 @@ footer h5 {
   position: relative;
 }
 .email-wrapper input {
-  width: 100%;
+  width: 90%;
   border: none;
   border-radius: 10px;
   padding: 15px 15px;
@@ -830,12 +832,12 @@ footer h5 {
 }
 .email-wrapper .email-icon {
   width: 60px;
-  height: 45px;
+  height: 47px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  right: 0;
+  right: 30px;
   border-radius: 10px;
   background-color: var(--root-gold);
   display: flex;
