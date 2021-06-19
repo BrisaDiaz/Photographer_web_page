@@ -776,7 +776,7 @@ a.btn,
 footer {
   background-color: var(--root-back);
   min-height: 50vh;
-  padding: 20px 20px;
+  padding: 20px 0;
   color: #fff;
   justify-content: space-evenly;
 }
@@ -785,19 +785,22 @@ footer h5 {
   margin: 15px 0;
 }
 .about-footer,
+.contact-adresses {
+  max-width: 900px;
+  padding: 0 15px;
+}
+.about-footer,
 .contact-info,
 .newsletter {
   display: flex;
   flex-flow: column;
   margin: 30px auto 0;
-  max-width: 900px;
 }
 .contact-adresses {
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 900px;
   margin: 0 auto;
 }
 .contact-adresses .contact-info,
@@ -962,9 +965,7 @@ footer h5 {
     width: 90%;
     max-width: 90%;
   }
-  .footer {
-    padding: 20px 0;
-  }
+
   .principal .foto-overlap {
     background: url(../assets/img/screens-1-1046x720.jpg) no-repeat center
       center;
