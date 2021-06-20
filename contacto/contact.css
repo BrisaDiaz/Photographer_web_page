@@ -108,6 +108,7 @@ main {
 }
 .contact-form-wrapper form .wrapper {
   display: flex;
+  width: 100%;
   flex-flow: column;
 }
 .contact-form-wrapper form h2 {
@@ -121,6 +122,9 @@ main {
   font-family: "IBM-regular";
   color: rgba(21, 21, 21, 0.7);
   margin: 5px 0;
+}
+.contact-form-wrapper form .wrapper.share {
+  width: 48%;
 }
 .contact-form-wrapper form .wrapper input,
 .contact-form-wrapper form .wrapper textarea {
@@ -249,6 +253,7 @@ main {
   .form-map .wrapper {
     flex-flow: column;
   }
+
   .contact-form-wrapper,
   .map {
     width: 100%;

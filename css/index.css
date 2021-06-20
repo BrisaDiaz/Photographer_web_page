@@ -131,7 +131,7 @@ a.btn,
   width: max-content;
   padding: 15px 20px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 7px;
   cursor: pointer;
   background-color: var(--root-gold);
 }
@@ -786,7 +786,7 @@ footer h5 {
 }
 .about-footer,
 .contact-adresses {
-  max-width: 900px;
+  max-width: 1000px;
   padding: 0 15px;
 }
 .about-footer,
@@ -833,14 +833,17 @@ footer h5 {
   outline: none;
   margin: 15px 0;
 }
+.email-wrapper input:focus {
+  border: 2px solid var(--root-gold);
+}
 .email-wrapper .email-icon {
   width: 60px;
   height: 47px;
   position: absolute;
-  top: 50%;
+  top: 49.5%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  right: 30px;
+  right: 35px;
   border-radius: 10px;
   background-color: var(--root-gold);
   display: flex;
@@ -929,6 +932,7 @@ footer h5 {
   }
   .acordion-list .content-box .label h4 {
     line-height: 120%;
+    padding: 10px 0;
   }
   .skill {
     width: 85%;
@@ -1005,5 +1009,9 @@ footer h5 {
   }
   .acordion-list .content-box .label h4 {
     line-height: 110%;
+  }
+  .about-footer,
+  .contact-adresses {
+    padding: 0 15px;
   }
 }
