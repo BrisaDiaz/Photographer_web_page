@@ -117,6 +117,47 @@ a {
 a:hover {
   color: var(--root-gold);
 }
+/* ANIMATIONS */
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    background: #fff;
+    height: 100%;
+  }
+  100% {
+    background: transparent;
+    height: 0%;
+  }
+}
+@keyframes scale-up-ver-top {
+  0% {
+    background: #fff;
+    height: 100%;
+  }
+  100% {
+    background: transparent;
+    height: 0%;
+  }
+}
+@-webkit-keyframes scale-up-hidde-top {
+  0% {
+    background: transparent;
+    height: 0%;
+  }
+  100% {
+    background: #fff;
+    height: 100%;
+  }
+}
+@keyframes scale-up-hidde-top {
+  0% {
+    background: transparent;
+    height: 0%;
+  }
+  100% {
+    background: #fff;
+    height: 100%;
+  }
+}
 /* BOTTONS  */
 a.btn,
 .btn {
@@ -671,20 +712,19 @@ a.btn,
   width: 50%;
 }
 .acordion-list .content-box {
-  max-width: 85%;
+  width: 85%;
   margin: 0 auto;
-  border-bottom: 1px solid var(--root-light-gold);
   transition: all 0.5s ease-in-out;
 }
 .content-box .label {
   width: 100%;
-  padding: 10px 0 10px 60px;
+  padding-left: 60px;
   position: relative;
   cursor: pointer;
 }
 .content-box .label:before {
   position: absolute;
-  padding: 0 4px 1px;
+  padding: 0.5px 4px 1px;
   line-height: 15px;
   border-bottom: 4px solid var(--root-gold);
   left: 20px;
@@ -706,16 +746,30 @@ a.btn,
   color: var(--root-gold);
 }
 .content-box .text {
-  height: 0;
   overflow: hidden;
-  display: none;
+  height: 0;
   margin: 10px 0 10px 60px;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
+  position: relative;
 }
-
+.content-box .text::after {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  content: " . ";
+  bottom: 0;
+  left: 0;
+  color: transparent;
+  background: #fff;
+  transition: all 1s ease-in-out;
+  animation: scale-up-hidde-top 1s forwards;
+}
 .content-box.active .text {
-  display: block;
   height: auto;
+}
+.content-box.active .text::after {
+  animation: scale-up-ver-top 1s forwards;
 }
 .content-box.active .label:before {
   content: "-";
@@ -776,7 +830,7 @@ a.btn,
 footer {
   background-color: var(--root-back);
   min-height: 50vh;
-  padding: 20px 0;
+  padding: 20px 0 40px;
   color: #fff;
   justify-content: space-evenly;
 }
@@ -796,6 +850,7 @@ footer h5 {
   flex-flow: column;
   margin: 30px auto 0;
 }
+
 .contact-adresses {
   display: flex;
   gap: 5px;
@@ -816,10 +871,15 @@ footer h5 {
 .contact-info ul li {
   margin: 10px 0;
   display: flex;
+  font-style: normal;
+}
+.contact-info ul li a {
+  font-size: 16px !important;
 }
 .contact-info ul li img {
   width: 15px;
-  margin: 5px 10px 5px 0;
+  height: 15px;
+  margin: 5px 12px 5px 0;
   align-self: flex-start;
 }
 .newsletter .email-wrapper {
@@ -966,8 +1026,7 @@ footer h5 {
 @media screen and (max-width: 670px) {
   .about,
   .acordion-list .content-box {
-    width: 90%;
-    max-width: 90%;
+    max-width: 85%;
   }
 
   .principal .foto-overlap {
