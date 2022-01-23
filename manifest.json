@@ -1,5 +1,6 @@
 {
   "name": "App",
+  "start_url": "/",
   "icons": [
     {
       "src": "/android-icon-36x36.png",
