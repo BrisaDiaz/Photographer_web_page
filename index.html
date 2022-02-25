@@ -89,10 +89,10 @@
         <div class="gallery__item-content">
           <a href="#portfolio" class="gallery__item-link">Mary Williams</a>
           <p>I offer high-quality photography & retouch services to individual and corporate clients all over the US.
-            <a tabindex="0" data-img="assets/img/gallery-original-1.jpg" class="gallery__zoom-btn btn "
+            <button tabindex="0" data-img="assets/img/gallery-original-1.jpg" class="gallery__zoom-btn btn "
               arial-label="open zoomed image">
               <img loading="lazy" src="assets/icons/loupe.svg" alt="zoom">
-            </a>
+            </button>
           </p>
         </div>
       </div>
@@ -102,10 +102,10 @@
         <div class="gallery__item-content">
           <a href="#portfolio" class="gallery__item-link">Mary Williams</a>
           <p>I offer high-quality photography & retouch services to individual and corporate clients all over the US.
-            <a tabindex="0" data-img="assets/img/gallery-original-2.jpg" class="gallery__zoom-btn btn "
+            <button tabindex="0" data-img="assets/img/gallery-original-2.jpg" class="gallery__zoom-btn btn "
               arial-label="open zoomed image">
               <img loading="lazy" src="assets/icons/loupe.svg" alt="zoom">
-            </a>
+            </button>
           </p>
         </div>
       </div>
@@ -115,10 +115,10 @@
         <div class="gallery__item-content">
           <a href="#portfolio" class="gallery__item-link">Mary Williams</a>
           <p>I offer high-quality photography & retouch services to individual and corporate clients all over the US.
-            <a tabindex="0" data-img="assets/img/gallery-original-3.jpg" class="gallery__zoom-btn btn "
+            <button tabindex="0" data-img="assets/img/gallery-original-3.jpg" class="gallery__zoom-btn btn "
               arial-label="open zoomed image">
               <img loading="lazy" src="assets/icons/loupe.svg" alt="zoom">
-            </a>
+            </button>
           </p>
         </div>
       </div>
@@ -128,10 +128,10 @@
         <div class="gallery__item-content">
           <a href="#portfolio" class="gallery__item-link">Mary Williams</a>
           <p>I offer high-quality photography & retouch services to individual and corporate clients all over the US.
-            <a tabindex="0" data-img="assets/img/gallery-original-4.jpg" class="gallery__zoom-btn btn "
+            <button tabindex="0" data-img="assets/img/gallery-original-4.jpg" class="gallery__zoom-btn btn "
               arial-label="open zoomed image">
               <img loading="lazy" src="assets/icons/loupe.svg" alt="zoom">
-            </a>
+            </button>
           </p>
         </div>
       </div>
@@ -142,10 +142,10 @@
         <div class="gallery__item-content">
           <a href="#portfolio" class="gallery__item-link">Mary Williams</a>
           <p>I offer high-quality photography & retouch services to individual and corporate clients all over the US.
-            <a tabindex="0" data-img="assets/img/gallery-original-6.jpg" class="gallery__zoom-btn btn "
+            <button tabindex="0" data-img="assets/img/gallery-original-6.jpg" class="gallery__zoom-btn btn "
               arial-label="open zoomed image">
               <img loading="lazy" src="assets/icons/loupe.svg" alt="zoom">
-            </a>
+            </button>
           </p>
         </div>
       </div>
@@ -155,10 +155,10 @@
         <div class="gallery__item-content">
           <a href="#portfolio" class="gallery__item-link">Mary Williams</a>
           <p>I offer high-quality photography & retouch services to individual and corporate clients all over the US.
-            <a tabindex="0" class="gallery__zoom-btn btn " arial-label="open zoomed image"
+            <button tabindex="0" class="gallery__zoom-btn btn " arial-label="open zoomed image"
               data-img="assets/img/gallery-original-5.jpg">
               <img loading="lazy" src="assets/icons/loupe.svg" alt="zoom">
-            </a>
+            </button>
           </p>
         </div>
       </div>
@@ -169,7 +169,7 @@
   <section class="light-box">
     <img loading="lazy" class="light-box__zoom-img" src="assets/img/gallery-original-1.jpg" alt="img-zoom">
     <svg class="light-box__close-btn" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px"
-      fill="transparent" tabindex="0" aria-label="close zoomed image">
+      fill="transparent" tabindex="0" aria-label="close zoomed image" role="button">
       <path d="M0 0h24v24H0z" />
       <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         fill="#fff" />
@@ -223,10 +223,10 @@
       aria-label="testimonial carousel" role="slider">
       <div class="testimonial-carousel__controls">
         <div class="testimonial-carousel__control-btn" id="btn-prev" tabindex="0"
-          aria-label="go to previous testimonial">
+          aria-label="go to previous testimonial" role="button">
 
         </div>
-        <div class="testimonial-carousel__control-btn" id="btn-next" tabindex="0" aria-label="button">
+        <div class="testimonial-carousel__control-btn" id="btn-next" tabindex="0" aria-label="button" role="button">
 
         </div>
       </div>
@@ -319,12 +319,12 @@
     <div class="questions__inner">
       <div class="accordion">
         <div class="accordion__item hidden" data-anim="fade-in-bottom" data-delay="0s">
-          <div class="accordion__header">
-            <h4 tabindex="0" class="accordion__label">
-              Lorem ipsum dolor sit amet consectetur?
-            </h4>
-          </div>
-          <div class="accordion__text-content">
+          <button class="accordion__header title-4" aria-expanded="false" id="accordion1" aria-controls="sect1">
+
+            Lorem ipsum dolor sit amet consectetur?
+
+          </button>
+          <div class="accordion__text-content" id="sect1" role="region" aria-labelledby="accordion1">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolore distinctio laboriosam
               excepturi
               perspiciatis, modi fugiat iusto voluptatum earum odit natus et! Ab dolorem vel saepe. Eos blanditiis ut
@@ -332,10 +332,10 @@
           </div>
         </div>
         <div class="accordion__item hidden" data-anim="fade-in-bottom" data-delay="0.2s">
-          <div class="accordion__header">
-            <h4 tabindex="0" class="accordion__label"> Distinctio enim dolore aperiam odio labore architecto ?</h4>
-          </div>
-          <div class="accordion__text-content">
+          <button class="accordion__header title-4" aria-expanded="false" id="accordion2" aria-controls="sect2">
+            Distinctio enim dolore aperiam odio labore architecto?
+          </button>
+          <div class="accordion__text-content" id="sect2" role="region" aria-labelledby="accordion2">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolore distinctio laboriosam
               excepturi
               perspiciatis, modi fugiat iusto voluptatum earum odit natus et! Ab dolorem vel saepe. Eos blanditiis ut
@@ -343,12 +343,12 @@
           </div>
         </div>
         <div class="accordion__item hidden" data-anim="fade-in-bottom" data-delay="0.3s">
-          <div class="accordion__header">
-            <h4 tabindex="0" class="accordion__label">
-              Lorem ipsum dolor sit amet consectetu?
-            </h4>
-          </div>
-          <div class="accordion__text-content">
+          <button class="accordion__header title-4" aria-expanded="false" id="accordion3" aria-controls="sect3">
+
+            Lorem ipsum dolor sit amet consectetu?
+
+          </button>
+          <div class="accordion__text-content" id="sect3" role="region" aria-labelledby="accordion3">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolore distinctio laboriosam
               excepturi
               perspiciatis, modi fugiat iusto voluptatum earum odit natus et! Ab dolorem vel saepe. Eos blanditiis ut
@@ -356,12 +356,12 @@
           </div>
         </div>
         <div class="accordion__item hidden" data-anim="fade-in-bottom" data-delay="0.4s">
-          <div class="accordion__header">
-            <h4 tabindex="0" class="accordion__label">
-              Distinctio enim dolore aperiam odio labore architecto ?
-            </h4>
-          </div>
-          <div class="accordion__text-content">
+          <button class="accordion__header title-4" aria-expanded="false" id="accordion4" aria-controls="sect4">
+
+            Distinctio enim dolore aperiam odio labore architecto ?
+
+          </button>
+          <div class="accordion__text-content" id="sect4" role="region" aria-labelledby="accordion4">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolore distinctio laboriosam
               excepturi
               perspiciatis, modi fugiat iusto voluptatum earum odit natus et! Ab dolorem vel saepe. Eos blanditiis ut
@@ -453,7 +453,7 @@
             </li>
             <li class="footer__contact-address">
               <img class="footer__contact-icon" loading="lazy" src="assets/icons/envelope-regular.svg" alt="">
-              <a class="footer__contact-link">info@demolink.org</a>
+              <a class="footer__contact-link" href="/contacto/contact.html">info@demolink.org</a>
             </li>
           </ul>
         </address>
@@ -466,9 +466,9 @@
         </p>
         <div class="newsletter-input">
           <input type="input" class="newsletter-input__input" name="email" placeholder="E-mail">
-          <div class="newsletter-input__icon">
+          <button class="newsletter-input__btn .btn">
             <img loading="lazy" src="assets/icons/mail.svg" alt="">
-          </div>
+          </button>
         </div>
 
       </section>

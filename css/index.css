@@ -116,7 +116,8 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-a:hover {
+a:hover,
+a:focus {
   color: var(--root-gold);
 }
 mark {
@@ -202,7 +203,9 @@ mark::before {
   max-width: max-content;
 }
 .testimonial-carousel__control-btn:focus-visible,
+.newsletter-input__btn:focus-visible,
 .gallery__item-link:focus-visible,
+.footer__contact-link:focus-visible,
 .scroll-top-btn:focus,
 .btn:focus,
 a.btn:focus {
@@ -230,7 +233,7 @@ a.btn:focus {
 }
 .btn:before,
 .gallery__image:before,
-.newsletter-input__icon:before,
+.newsletter-input__btn:before,
 .scroll-top-btn:before {
   position: absolute;
   content: "";
@@ -249,7 +252,7 @@ a.btn:focus {
 
 .btn:hover:before,
 .gallery__image:hover:before,
-.newsletter-input__icon:hover:before,
+.newsletter-input__btn:hover:before,
 .scroll-top-btn:hover:before {
   transform: scale(1);
 }
@@ -581,6 +584,7 @@ a.btn:focus {
   padding: 15px;
   border-radius: 50%;
   overflow: hidden;
+  border: transparent;
   position: relative;
   cursor: pointer;
   z-index: 1;
@@ -781,6 +785,12 @@ a.btn:focus {
   padding-left: 60px;
   position: relative;
   cursor: pointer;
+  font-weight: 600;
+  line-height: unset;
+  text-align: start;
+  border: transparent;
+  background: transparent;
+  font-family: "IBM-regular";
 }
 .accordion__header:before {
   position: absolute;
@@ -794,7 +804,7 @@ a.btn:focus {
   content: "+";
   border-radius: 2px;
   color: #fff;
-  font-size: 120%;
+
   font-weight: 800;
   display: flex;
   justify-content: center;
@@ -802,12 +812,7 @@ a.btn:focus {
   background-color: var(--root-gold);
 }
 
-.accordion__label {
-  line-height: unset;
-  font-weight: 600;
-}
-
-.accordion__label:focus-visible {
+.accordion__header:focus-visible {
   outline: 2px solid var(--root-gold);
   outline: off;
   outline-offset: 3px;
@@ -821,7 +826,7 @@ a.btn:focus {
   position: relative;
 }
 
-.accordion__item--active .accordion__label {
+.accordion__item--active .accordion__header {
   color: var(--root-gold);
 }
 .accordion__item--active .accordion__header::before {
@@ -920,6 +925,7 @@ footer {
 .footer__contact-link {
   font-size: 16px !important;
   color: #fff;
+  border-radius: 2px;
 }
 .footer__contact-icon {
   width: 15px;
@@ -945,13 +951,13 @@ footer {
 .newsletter-input__input:focus {
   border: 2px solid var(--root-gold);
 }
-.newsletter-input__icon {
+.newsletter-input__btn {
   width: 55px;
   height: 100%;
   position: absolute;
   top: 0;
   right: 0;
-
+  border: transparent;
   border-radius: 10px;
   background-color: var(--root-gold);
   display: flex;
@@ -961,7 +967,7 @@ footer {
   z-index: 1;
   cursor: pointer;
 }
-.newsletter-input__icon img {
+.newsletter-input__btn img {
   width: 20px;
 }
 /* MEDIA QUERIES */

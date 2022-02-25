@@ -13,7 +13,7 @@
   display: block;
   height: 300px;
   width: 100vw;
-  padding: 20px;
+  padding: 2rem;
   background: url(../assets/img/breadcrumbs-image-1.jpg) no-repeat center center;
   z-index: 1;
   position: relative;

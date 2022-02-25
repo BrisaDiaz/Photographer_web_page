@@ -4,9 +4,6 @@ export default function accordionList() {
     if (e.target.matches(".accordion__header")) {
       toggleActiveStyles(e.target);
     }
-    if (e.target.matches(".accordion__label")) {
-      toggleActiveStyles(e.target.parentNode);
-    }
   });
   d.addEventListener("keydown", (e) => {
     if (e.target.matches(".accordion__label") && e.key === "Enter") {
@@ -16,7 +13,12 @@ export default function accordionList() {
 }
 
 function toggleActiveStyles($accordionHeader) {
+  const isExpanded =
+    $accordionHeader.getAttribute("aria-expanded") === "true" ? true : false;
+
   let $contentBox = $accordionHeader.parentNode;
+
+  $accordionHeader.setAttribute("aria-expanded", !isExpanded);
   $contentBox.classList.toggle("accordion__item--active");
   $accordionHeader.classList.toggle(".accordion__header--active");
 }
