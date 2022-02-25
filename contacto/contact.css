@@ -150,11 +150,11 @@ a {
   margin: 20px 0;
 }
 
-.contact-form [required]:valid {
+.contact-form__input:valid {
   border: thin solid var(--form-ok-color);
 }
 
-.contact-form [required]:invalid {
+.contact-form__input--invalid {
   border: thin solid var(--form-error-color);
 }
 
@@ -162,6 +162,7 @@ a {
   font-size: 70%;
   color: var(--form-error-color);
   transition: all 800ms ease;
+  display: none;
 }
 
 .contact-form__error--visible {

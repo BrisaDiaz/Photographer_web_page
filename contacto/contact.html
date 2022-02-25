@@ -84,30 +84,30 @@
           <form class="contact-form">
             <h2 class="contact-form__title">Contact Us</h2>
             <div class="contact-form__input-container contact-form__input-container--share ">
-              <label class="contact-form__label" for="#name">Name</label>
+              <label class="contact-form__label" for="#name">Name*</label>
               <input class="contact-form__input" id="name" type="text" name="name" title="Only letters and blank spaces"
                 required pattern="^[A-Za-zñÑáÁéÉíÍóÓúÚÜü\s]+$">
             </div>
 
             <div class="contact-form__input-container contact-form__input-container--share">
-              <label class="contact-form__label" for="#lastName">Last Name</label>
+              <label class="contact-form__label" for="#lastName">Last Name*</label>
               <input class="contact-form__input" id="lastName" type="text" name="lastName"
                 title="Only letters and blank spaces" required pattern="^[A-Za-zñÑáÁéÉíÍóÓúÚÜü\s]+$">
             </div>
             <div class="contact-form__input-container  contact-form__input-container--share">
-              <label class="contact-form__label" for="#email">E-mail</label>
+              <label class="contact-form__label" for="#email">E-mail*</label>
               <input class="contact-form__input" id="email" name="email" type="text" required title="invalid email"
                 pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
             </div>
 
             <div class="contact-form__input-container contact-form__input-container--share "><label for="#phone"
                 class="contact-form__label">Phone</label>
-              <input class="contact-form__input" id="phone" type="text" name="phone" required title="invalid formate"
+              <input class="contact-form__input" id="phone" type="text" name="phone" title="invalid formate"
                 pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$">
             </div>
 
             <div class="contact-form__input-container">
-              <label class="contact-form__label" for="#message">Message</label>
+              <label class="contact-form__label" for="#message">Message*</label>
               <textarea class="contact-form__textarea" required name="comments" cols="60" rows="10"
                 data-pattern="^.{1,255}$" title="Your comment should not exceed 255 characters"></textarea>
             </div>
