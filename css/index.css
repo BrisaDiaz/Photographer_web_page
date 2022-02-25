@@ -403,7 +403,8 @@ a.btn:focus {
   right: 0;
   left: 0;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(1px) grayscale(1);
   transform: translate(0, -200%);
   -webkit-transform: translate(0, -200%);
   transition: all 0.3s ease;
