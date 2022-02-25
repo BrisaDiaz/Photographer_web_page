@@ -1,19 +1,18 @@
 const d = document;
 
-export default function  animationTrigger(){
+export default function animationTrigger() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio > 0) {
+        entry.target.style.animation = `${entry.target.dataset.anim} 0.5s linear ${entry.target.dataset.delay} 1 forwards`;
 
-  const observer = new IntersectionObserver(entries=>{
- entries.forEach( entrie => {
-   if(entrie.intersectionRatio > 0){
-     entrie.target.style.animation= `${entrie.target.dataset.anim} 0.5s linear ${entrie.target.dataset.delay} 1 forwards`;
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+  let $animates = d.querySelectorAll("[data-anim]");
 
-     observer.unobserve(entrie.target)
-   }
- })
-})
-let $animetes = d.querySelectorAll("[data-anim]")
-
-$animetes.forEach(entries => {
-  observer.observe(entries)
-} )
+  $animates.forEach((entries) => {
+    observer.observe(entries);
+  });
 }

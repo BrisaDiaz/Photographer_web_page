@@ -41,133 +41,141 @@
   </header>
   <!-- MENU -->
   <aside class="panel">
-    <nav class="menu">
-      <a href="../index.html#portafolio">Portafolio</a>
-      <a href="../index.html#about">About Me</a>
-      <a href="../index.html#clients">My Clients</a>
-      <a href="../index.html#questions">Frecuente Questions</a>
-      <a href="contact.html">Contact</a>
+    <nav class="panel__menu">
+      <a class="panel__menu-link" href="#portfolio" data-scroll-spy>Portfolio</a>
+      <a class="panel__menu-link" href="#about" data-scroll-spy>About Me</a>
+      <a class="panel__menu-link" href="#clients" data-scroll-spy>My Clients</a>
+      <a class="panel__menu-link" href="#questions" data-scroll-spy>Frequent Questions</a>
+      <a class="panel__menu-link" href="contacto/contact.html" data-scroll-spy>Contact</a>
 
     </nav>
   </aside>
   <main>
     <article class="contact-banner">
-      <h2>Contacts</h2>
-      <h6><a href="../index.html">HOME</a><span>
-          < </span>CONTACT</h6>
+      <h1 class="contact-banner__title title-2">Contacts</h1>
+      <p class="title-6 "><a class="contact-banner__breadcrumb-link" href="../index.html">HOME</a><span> /</span>CONTACT
+      </p>
     </article>
 
-    <section class="contacts">
-      <address data-anim="fade-in-bottom" data-delay="0s" class="cell-numbers apear">
-        <img src="../assets/icons/phone-black.svg" alt="phone">
+    <section class="contact-channels">
+      <address data-anim="fade-in-bottom" data-delay="0s" class="contact-channels__cell-numbers hidden">
+        <img src="../assets/icons/phone-black.svg" alt="">
         <a href="">1-800-1234-678</a>
         <a href=""> 1-800-9876-098</a>
 
 
 
       </address>
-      <address data-anim="fade-in-bottom" data-delay="0.1s" class="emails apear">
-        <img src="../assets/icons/evenlope-black.svg" alt="mail">
+      <address data-anim="fade-in-bottom" data-delay="0.1s" class="contact-channels__emails hidden">
+        <img src="../assets/icons/evenlope-black.svg" alt="">
         <a href="">youremail@email.com </a>
 
 
       </address>
-      <address class="directions apear" data-anim="fade-in-bottom" data-delay="0.2s">
-        <img src="../assets/icons/map-marker-black.svg" alt="direction">
+      <address class="contact-channels__locations hidden" data-anim="fade-in-bottom" data-delay="0.2s">
+        <img src="../assets/icons/map-marker-black.svg" alt="">
         <a href=""> 2130 Fulton Street San Diego, CA 94117-1080 USA</a>
 
-        </daddressiv>
+      </address>
     </section>
-    <section class="form-map">
-      <div class="wrapper ">
-        <div class="contact-form-wrapper">
+    <section class="form-section">
+      <div class="form-section__inner">
+        <div class="contact-form-section">
           <form class="contact-form">
-            <h2>Contact Us</h2>
-            <div class="wrapper share ">
-              <label for="#name">Name</label>
-              <input id="name" type="text" name="name" title="Nombre solo acepta letras y
-                      espacios en blanco" required pattern="^[A-Za-zñÑáÁéÉíÍóÓúÚÜü\s]+$">
+            <h2 class="contact-form__title">Contact Us</h2>
+            <div class="contact-form__input-container contact-form__input-container--share ">
+              <label class="contact-form__label" for="#name">Name</label>
+              <input class="contact-form__input" id="name" type="text" name="name" title="Only letters and blank spaces"
+                required pattern="^[A-Za-zñÑáÁéÉíÍóÓúÚÜü\s]+$">
             </div>
 
-            <div class="wrapper share">
-              <label for="#lastName">Last Name</label>
-              <input id="lastName" type="text" name="lastName" title="Nombre solo acepta letras y
-                                            espacios en blanco" required pattern="^[A-Za-zñÑáÁéÉíÍóÓúÚÜü\s]+$">
+            <div class="contact-form__input-container contact-form__input-container--share">
+              <label class="contact-form__label" for="#lastName">Last Name</label>
+              <input class="contact-form__input" id="lastName" type="text" name="lastName"
+                title="Only letters and blank spaces" required pattern="^[A-Za-zñÑáÁéÉíÍóÓúÚÜü\s]+$">
             </div>
-            <div class="wrapper  share">
-              <label for="#email">E-mail</label>
-              <input id="email" name="email" type="text" required title="Email incorrecto"
+            <div class="contact-form__input-container  contact-form__input-container--share">
+              <label class="contact-form__label" for="#email">E-mail</label>
+              <input class="contact-form__input" id="email" name="email" type="text" required title="invalid email"
                 pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
             </div>
 
-            <div class="wrapper share "><label for="#phone">Phone</label>
-              <input id="phone" type="text" name="phone" required title="Formato incorrecto"
+            <div class="contact-form__input-container contact-form__input-container--share "><label for="#phone"
+                class="contact-form__label">Phone</label>
+              <input class="contact-form__input" id="phone" type="text" name="phone" required title="invalid formate"
                 pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$">
             </div>
 
-            <div class="wrapper">
-              <label for="#message">Message</label>
-              <textarea required name="comments" cols="60" rows="10" data-pattern="^.{1,255}$"
-                title="Tu comentario no debe exceder los 255 carácteres"></textarea>
+            <div class="contact-form__input-container">
+              <label class="contact-form__label" for="#message">Message</label>
+              <textarea class="contact-form__textarea" required name="comments" cols="60" rows="10"
+                data-pattern="^.{1,255}$" title="Your comment should not exceed 255 characters"></textarea>
             </div>
 
-            <button class="btn " type="submit">Enviar</button>
+            <button class="btn contact-form__button " type="submit">Send</button>
           </form>
         </div>
-        <div class="map apear" data-anim="fade-in-left" data-delay="0.2s">
-          <iframe
+        <div class="map-section  hidden" data-anim="fade-in-left" data-delay="0.2s">
+          <iframe class="map-section__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429157.54690850474!2d-117.38918103387577!3d32.82424039659814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1616171822229!5m2!1ses-419!2sar"
             width="900" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </section>
+    <!-- FOOTER -->
     <footer>
-      <div class="about-footer apear" data-anim="fade-in-bottom" data-delay="0s">
-        <h5>About Me</h5>
-        <p>My name is Jonathan Davis and I’m professional photographer and retoucher. I’m offering my services to
-          individual and
-          corporate clients throughout the USA. Make your favorite life moment or event last and remain in your memory!
-        </p>
-      </div>
-      <section class='contact-adresses'>
-        <div class="contact-info  apear" data-anim="fade-in-bottom" data-delay="0.1s">
-          <h5>Contact Information
-          </h5>
-          <address>
-            <ul>
-              <li>
-                <img src="../assets/icons/map-marker-alt-solid.svg" alt="ubication-icon">
-                <div>
-                  <p>2130 Fulton Street</p>
-                  <p>San Diego, CA 94117-1080 USA</p>
-                </div </li>
-              <li>
-                <img src="../assets/icons/phone-alt-solid.svg" alt="phone-icon">
-                <p>1-800-1234-678</p>
-              </li>
-              <li>
-                <img src="../assets/icons/envelope-regular.svg" alt="email-icon">
-                <p>info@demolink.org</p>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="newsletter  apear" data-anim="fade-in-bottom" data-delay="0.2s">
-          <h5>Newsletter</h5>
+      <div class="footer__inner">
+
+
+        <section class="footer__about hidden" data-anim="fade-in-bottom" data-delay="0s">
+          <h5 class="footer__title">About Me</h5>
+          <p>My name is Jonathan Davis and I’m professional photographer and retoucher. I’m offering my services to
+            individual and
+            corporate clients throughout the USA. Make your favorite life moment or event last and remain in your
+            memory!
+          </p>
+        </section>
+        <section class='footer__contact'>
+          <div class=" hidden" data-anim="fade-in-bottom" data-delay="0.1s">
+            <h5 class="footer__title">Contact Information
+            </h5>
+            <address>
+              <ul class="footer__contact-info">
+                <li class="footer__contact-address">
+                  <img class="footer__contact-icon" loading="lazy" src="/assets/icons/map-marker-alt-solid.svg" alt="">
+                  <div>
+                    <p>2130 Fulton Street</p>
+                    <p>San Diego, CA 94117-1080 USA</p>
+                  </div </li>
+                <li class="footer__contact-address">
+                  <img class="footer__contact-icon" loading="lazy" src="/assets/icons/phone-alt-solid.svg" alt="">
+                  <p>1-800-1234-678</p>
+                </li>
+                <li class="footer__contact-address">
+                  <img class="footer__contact-icon" loading="lazy" src="/assets/icons/envelope-regular.svg" alt="">
+                  <a class="footer__contact-link">info@demolink.org</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </section>
+        <section class="newsletter  hidden" data-anim="fade-in-bottom" data-delay="0.2s">
+          <h5 class="footer__title">Newsletter</h5>
           <p>Sign up to our newsletter and be the first to know about latest news, special offers, events, and
             discounts.
           </p>
-          <div class="email-wrapper">
-            <input type="text" name="email" placeholder="E-mail">
-            <div class="email-icon">
-              <img src="../assets/icons/mail.svg" alt="email-icon">
+          <div class="newsletter-input">
+            <input type="input" class="newsletter-input__input" name="email" placeholder="E-mail">
+            <div class="newsletter-input__icon">
+              <img loading="lazy" src="/assets/icons/mail.svg" alt="">
             </div>
           </div>
 
-        </div>
+        </section>
 
 
-      </section>
+
+      </div>
     </footer>
     <script src="contact.js" type="module"></script>
 </body>
