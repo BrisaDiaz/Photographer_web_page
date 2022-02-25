@@ -119,6 +119,27 @@ a {
 a:hover {
   color: var(--root-gold);
 }
+mark {
+  background: transparent;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+mark::before {
+  content: " ";
+  background-color: var(--root-gold);
+  width: 110%;
+  margin: 0 auto;
+  height: 60%;
+  position: absolute;
+  z-index: -1;
+  filter: url(#marker-shape);
+  left: 0;
+  left: -60%;
+  bottom: 0;
+  justify-content: center;
+  transform: translateX(50%);
+}
 /* ANIMATIONS */
 @-webkit-keyframes scale-up-ver-top {
   0% {
@@ -736,7 +757,7 @@ a.btn:focus {
 .questions {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 0 60px;
+  padding: 20px 0;
   width: 100%;
 }
 
@@ -744,6 +765,7 @@ a.btn:focus {
   display: flex;
   width: 100%;
   gap: 2rem;
+  padding: 30px 0;
 }
 .accordion-list,
 .skills {

@@ -80,7 +80,7 @@
   </section>
   <!-- PORTFOLIO -->
   <section id="portfolio" class="portfolio">
-    <h3 class="hidden" data-anim="fade-in-top" data-delay="0s">Portfolio</h3>
+    <h3 class="hidden" data-anim="fade-in-top" data-delay="0s"><mark> Portfolio</mark></h3>
 
     <div class="gallery" role="marquee">
       <!-- GALLERY ITEM -->
@@ -178,7 +178,7 @@
   </section>
   <!-- ABOUT -->
   <section id="about" class="about">
-    <h3 data-anim="fade-in-bottom" data-delay="0s" class="hidden">About Me</h3>
+    <h3 data-anim="fade-in-bottom" data-delay="0s" class="hidden"><mark>About Me</mark></h3>
     <p class="hidden" data-anim="fade-in-right" data-delay="0.1s">Since 2008, I’ve been providing my clients with
       quality
       photography and retouching services. Some of my works
@@ -214,7 +214,7 @@
   <!-- TESTIMONIALS -->
   <section id="clients" class="testimonials">
 
-    <h3 class="hidden" data-anim="fade-in-bottom" data-delay="0s">testimonials</h3>
+    <h3 class="hidden" data-anim="fade-in-bottom" data-delay="0s"><mark>testimonials</mark></h3>
 
     </div>
 
@@ -313,7 +313,7 @@
   </article>
   <!-- QUESTIONS -->
   <section id="questions" class="questions">
-    <h3 data-anim="fade-in-bottom" data-delay="0s" class="spear">Frequently Asked Questions
+    <h3 data-anim="fade-in-bottom" data-delay="0s" class="spear"><mark>Frequently Asked Questions</mark>
     </h3>
     <div class="questions__inner">
       <div class="accordion">
@@ -478,6 +478,16 @@
   </footer>
   <!-- SCROLL BUTTON -->
   <button class="scroll-top-btn .btn hidden" tabindex="0" aria-label="scroll to top">◭</button>
+
+  <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+    <defs>
+      <filter id="marker-shape">
+        <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+      </filter>
+    </defs>
+  </svg>
+
   <script src="js/index.js" type="module"></script>
 
 </body>
