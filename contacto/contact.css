@@ -3,6 +3,12 @@
   --form-error-color: rgb(216, 109, 70);
   --border-color: rgb(211, 213, 219);
 }
+*:focus-visible {
+  outline: 2px solid var(--root-gold);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 .contact-banner {
   display: block;
   height: 300px;
@@ -43,6 +49,11 @@ a {
   color: rgba(21, 21, 21, 0.7);
   line-height: 120%;
   font-size: 100%;
+  transition: all 0.3s ease;
+}
+a:hover,
+a:focus- {
+  color: var(--root-gold);
 }
 
 .contact-channels {
@@ -132,7 +143,8 @@ a {
 
 .contact-form__input:focus,
 .contact-form__textarea:focus {
-  border-width: 2px;
+  outline: 2px solid var(--root-gold);
+  outline-offset: 2px;
 }
 .contact-form__input {
   width: 250px;
@@ -258,6 +270,6 @@ a {
 @media screen and (max-width: 580px) {
   .contact-form {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 1rem;
   }
 }

@@ -82,14 +82,15 @@
   <section id="portfolio" class="portfolio">
     <h3 class="hidden" data-anim="fade-in-top" data-delay="0s">Portfolio</h3>
 
-    <div class="gallery">
+    <div class="gallery" role="marquee">
       <!-- GALLERY ITEM -->
       <div class="gallery__item hidden" data-anim="fade-in-top" data-delay="0.1s">
         <img class="gallery__image" loading="lazy" src="assets/img/gallery-masonry-1-370x256.jpg" alt="photo">
         <div class="gallery__item-content">
-          <a>Mary Williams</a>
+          <a href="#portfolio" class="gallery__item-link">Mary Williams</a>
           <p>I offer high-quality photography & retouch services to individual and corporate clients all over the US.
-            <a tabindex="0" data-img="assets/img/gallery-original-1.jpg" class="gallery__zoom-btn btn ">
+            <a tabindex="0" data-img="assets/img/gallery-original-1.jpg" class="gallery__zoom-btn btn "
+              arial-label="open zoomed image">
               <img loading="lazy" src="assets/icons/loupe.svg" alt="zoom">
             </a>
           </p>
@@ -99,9 +100,10 @@
       <div class="gallery__item hidden" data-anim="fade-in-bottom" data-delay="0.1s">
         <img class="gallery__image" loading="lazy" src="assets/img/gallery-masonry-2-370x464.jpg" alt="photo">
         <div class="gallery__item-content">
-          <a>Mary Williams</a>
+          <a href="#portfolio" class="gallery__item-link">Mary Williams</a>
           <p>I offer high-quality photography & retouch services to individual and corporate clients all over the US.
-            <a tabindex="0" data-img="assets/img/gallery-original-2.jpg" class="gallery__zoom-btn btn ">
+            <a tabindex="0" data-img="assets/img/gallery-original-2.jpg" class="gallery__zoom-btn btn "
+              arial-label="open zoomed image">
               <img loading="lazy" src="assets/icons/loupe.svg" alt="zoom">
             </a>
           </p>
@@ -111,9 +113,10 @@
       <div class="gallery__item hidden" data-anim="fade-in-top" data-delay="0.1s">
         <img class="gallery__image" loading="lazy" src="assets/img/gallery-masonry-3-370x256.jpg" alt="photo">
         <div class="gallery__item-content">
-          <a>Mary Williams</a>
+          <a href="#portfolio" class="gallery__item-link">Mary Williams</a>
           <p>I offer high-quality photography & retouch services to individual and corporate clients all over the US.
-            <a tabindex="0" data-img="assets/img/gallery-original-3.jpg" class="gallery__zoom-btn btn ">
+            <a tabindex="0" data-img="assets/img/gallery-original-3.jpg" class="gallery__zoom-btn btn "
+              arial-label="open zoomed image">
               <img loading="lazy" src="assets/icons/loupe.svg" alt="zoom">
             </a>
           </p>
@@ -123,9 +126,10 @@
       <div class="gallery__item hidden" data-anim="fade-in-bottom" data-delay="0.1s">
         <img class="gallery__image" loading="lazy" src="assets/img/gallery-masonry-4-370x464.jpg" alt="photo">
         <div class="gallery__item-content">
-          <a>Mary Williams</a>
+          <a href="#portfolio" class="gallery__item-link">Mary Williams</a>
           <p>I offer high-quality photography & retouch services to individual and corporate clients all over the US.
-            <a tabindex="0" data-img="assets/img/gallery-original-4.jpg" class="gallery__zoom-btn btn ">
+            <a tabindex="0" data-img="assets/img/gallery-original-4.jpg" class="gallery__zoom-btn btn "
+              arial-label="open zoomed image">
               <img loading="lazy" src="assets/icons/loupe.svg" alt="zoom">
             </a>
           </p>
@@ -136,9 +140,10 @@
         <img class="gallery__image" loading="lazy" src="assets/img/gallery-masonry-6-370x464.jpg" alt="photo">
 
         <div class="gallery__item-content">
-          <a>Mary Williams</a>
+          <a href="#portfolio" class="gallery__item-link">Mary Williams</a>
           <p>I offer high-quality photography & retouch services to individual and corporate clients all over the US.
-            <a tabindex="0" data-img="assets/img/gallery-original-6.jpg" class="gallery__zoom-btn btn ">
+            <a tabindex="0" data-img="assets/img/gallery-original-6.jpg" class="gallery__zoom-btn btn "
+              arial-label="open zoomed image">
               <img loading="lazy" src="assets/icons/loupe.svg" alt="zoom">
             </a>
           </p>
@@ -148,9 +153,10 @@
       <div class="gallery__item hidden" data-anim="fade-in-left" data-delay="0.1s">
         <img class="gallery__image" loading="lazy" src="assets/img/gallery-masonry-5-370x256.jpg" alt="photo">
         <div class="gallery__item-content">
-          <a>Mary Williams</a>
+          <a href="#portfolio" class="gallery__item-link">Mary Williams</a>
           <p>I offer high-quality photography & retouch services to individual and corporate clients all over the US.
-            <a tabindex="0" class="gallery__zoom-btn btn " data-img="assets/img/gallery-original-5.jpg">
+            <a tabindex="0" class="gallery__zoom-btn btn " arial-label="open zoomed image"
+              data-img="assets/img/gallery-original-5.jpg">
               <img loading="lazy" src="assets/icons/loupe.svg" alt="zoom">
             </a>
           </p>
@@ -212,12 +218,14 @@
 
     </div>
 
-    <div class="testimonial-carousel hidden" data-anim="fade-in-right" data-delay="0.2s">
+    <div class="testimonial-carousel hidden" data-anim="fade-in-right" data-delay="0.2s"
+      aria-label="testimonial carousel" role="slider">
       <div class="testimonial-carousel__controls">
-        <div class="testimonial-carousel__control-btn" id="btn-prev">
+        <div class="testimonial-carousel__control-btn" id="btn-prev" tabindex="0"
+          aria-label="go to previous testimonial">
 
         </div>
-        <div class="testimonial-carousel__control-btn" id="btn-next">
+        <div class="testimonial-carousel__control-btn" id="btn-next" tabindex="0" aria-label="button">
 
         </div>
       </div>
@@ -424,29 +432,31 @@
           corporate clients throughout the USA. Make your favorite life moment or event last and remain in your memory!
         </p>
       </section>
-      <section class='footer__contact'>
-        <div class=" hidden" data-anim="fade-in-bottom" data-delay="0.1s">
-          <h5 class="footer__title">Contact Information
-          </h5>
-          <address>
-            <ul class="footer__contact-info">
-              <li class="footer__contact-address">
-                <img class="footer__contact-icon" loading="lazy" src="assets/icons/map-marker-alt-solid.svg" alt="">
-                <div>
-                  <p>2130 Fulton Street</p>
-                  <p>San Diego, CA 94117-1080 USA</p>
-                </div </li>
-              <li class="footer__contact-address">
-                <img class="footer__contact-icon" loading="lazy" src="assets/icons/phone-alt-solid.svg" alt="">
-                <p>1-800-1234-678</p>
-              </li>
-              <li class="footer__contact-address">
-                <img class="footer__contact-icon" loading="lazy" src="assets/icons/envelope-regular.svg" alt="">
-                <a class="footer__contact-link">info@demolink.org</a>
-              </li>
-            </ul>
-          </address>
-        </div>
+      <section data-anim="fade-in-bottom" class='footer__contact  hidden' data-delay="0.1s">
+
+        <h5 class="footer__title">Contact Information
+        </h5>
+        <address>
+          <ul class="footer__contact-info">
+            <li class="footer__contact-address">
+              <img class="footer__contact-icon" loading="lazy" src="assets/icons/map-marker-alt-solid.svg" alt="">
+              <p>
+                2130 Fulton Street
+                <br>
+                San Diego, CA 94117-1080 USA
+              </p>
+            </li>
+            <li class="footer__contact-address">
+              <img class="footer__contact-icon" loading="lazy" src="assets/icons/phone-alt-solid.svg" alt="">
+              <p>1-800-1234-678</p>
+            </li>
+            <li class="footer__contact-address">
+              <img class="footer__contact-icon" loading="lazy" src="assets/icons/envelope-regular.svg" alt="">
+              <a class="footer__contact-link">info@demolink.org</a>
+            </li>
+          </ul>
+        </address>
+
       </section>
       <section class="newsletter  hidden" data-anim="fade-in-bottom" data-delay="0.2s">
         <h5 class="footer__title">Newsletter</h5>
@@ -467,7 +477,7 @@
     </div>
   </footer>
   <!-- SCROLL BUTTON -->
-  <button class="scroll-top-btn hidden">◭</button>
+  <button class="scroll-top-btn .btn hidden" tabindex="0" aria-label="scroll to top">◭</button>
   <script src="js/index.js" type="module"></script>
 
 </body>

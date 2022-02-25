@@ -17,7 +17,10 @@ export default function lightBox() {
     if (e.key === "Enter" && e.target.matches(".gallery__zoom-btn")) {
       return addVisibleStyles($lightBox, $imgZoom, e);
     }
-    if (e.key === "Escape" && e.target.matches(".gallery__zoom-btn")) {
+    if (
+      e.key === "Escape" ||
+      (e.key === "Enter" && e.target.matches(".light-box__close-btn"))
+    ) {
       removeVisibleStyles($lightBox, $imgZoom);
     }
   });

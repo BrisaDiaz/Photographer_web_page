@@ -180,7 +180,11 @@ a:hover {
   min-width: max-content;
   max-width: max-content;
 }
-.btn:focus {
+.testimonial-carousel__control-btn:focus-visible,
+.gallery__item-link:focus-visible,
+.scroll-top-btn:focus,
+.btn:focus,
+a.btn:focus {
   outline: 2px solid var(--root-gold);
   outline-offset: 2px;
 }
@@ -381,7 +385,7 @@ a:hover {
   padding-top: 1px;
   border-radius: 4px;
 }
-.panel-btn .hamburger:focus {
+.panel-btn .hamburger:focus-visible {
   outline: 2px solid var(--root-gold);
   outline-offset: 4px;
 }
@@ -530,6 +534,15 @@ a:hover {
   color: #fff;
   opacity: 0;
   transition: 0.1s ease-in-out;
+}
+.gallery__item-link {
+  color: white;
+  width: max-content;
+  border-radius: 2px;
+}
+.gallery__item-link:hover,
+.gallery__item-link:focus-visible {
+  color: var(--root-gold);
 }
 .gallery__item-content:hover,
 .gallery__item-content:focus-within {
@@ -743,6 +756,7 @@ a:hover {
   width: 100%;
   padding-left: 60px;
   position: relative;
+  cursor: pointer;
 }
 .accordion__header:before {
   position: absolute;
@@ -762,14 +776,14 @@ a:hover {
   justify-content: center;
   align-items: center;
   background-color: var(--root-gold);
-  cursor: pointer;
 }
 
 .accordion__label {
   line-height: unset;
   font-weight: 600;
 }
-.accordion__label:focus {
+
+.accordion__label:focus-visible {
   outline: 2px solid var(--root-gold);
   outline: off;
   outline-offset: 3px;
@@ -823,7 +837,7 @@ a:hover {
   top: 0;
   left: 0;
   background-color: var(--root-gold);
-  transition: all 5s linear;
+  transition: all 2s linear;
 }
 /* BANNER */
 .banner {

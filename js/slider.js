@@ -35,4 +35,17 @@ export default function slider() {
       clearInterval(autoSlider);
     }
   });
+  d.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter") return;
+    if (e.target === $btnPrev) {
+      e.preventDefault();
+      movePrev();
+      clearInterval(autoSlider);
+    }
+    if (e.target === $btnNext) {
+      e.preventDefault();
+      moveNext();
+      clearInterval(autoSlider);
+    }
+  });
 }
