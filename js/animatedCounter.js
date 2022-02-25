@@ -18,7 +18,7 @@ export default function animatedCounter() {
       }
     });
   });
-  const $counters = d.querySelectorAll(".counter");
+  const $counters = d.querySelectorAll(".achievement__counter");
 
   $counters.forEach((entries) => {
     observerCounter.observe(entries);

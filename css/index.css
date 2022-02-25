@@ -653,7 +653,7 @@ a.btn:focus {
   text-align: center;
 }
 
-.about p {
+.about__text {
   margin: 0 auto;
   width: 80%;
 }
@@ -666,7 +666,7 @@ a.btn:focus {
 .achievement {
   margin: 15px;
 }
-.achievement img {
+.achievement__image {
   width: 50px;
 }
 /* TESTIMONIALS */
