@@ -1,10 +1,8 @@
 # Photographer web page
 
-## Multi page Vanilla Javascript project
+### Demo: https://brisadiaz.github.io/Photographer_web_page/
 
-### Demo: https://brisadiaz.github.io/Fotographer_web_page/
-
-### 🛠  Technologies:
+### 🛠 Technologies:
 
 - Javascript
 - css
